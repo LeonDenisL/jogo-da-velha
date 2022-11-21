@@ -1,0 +1,7 @@
+# Django #
+*.o
+*.win
+*.dev
+*.layout
+ProjetoAlgJogoVelha.exe
+
