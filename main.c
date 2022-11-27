@@ -52,7 +52,7 @@ int ganhouPorLinhas(char c) {
     int ganhou = 0;
     for (l = 0; l < 3; l++)
     {
-        ganhou += ganhouPorLinha(l, c);
+        ganhou = ganhou + ganhouPorLinha(l, c);
     }
     return ganhou;
 }
