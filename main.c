@@ -71,6 +71,7 @@ int ganhouPorColunas(char j) {
     for (c = 0; c < 3; c++)
     {
         ganhou += ganhouPorColuna(c, j);
+
     }
     return ganhou;
 }
@@ -110,13 +111,15 @@ void lerCoordenadas(char j) {
     scanf("%d", &coluna);
 
     while (cordenadaValida(linha, coluna) == 0) {
-        printf("\nCoordenadas invalidas!\n\nJogador %c digite outra linha e coluna: ", j);
-        scanf("%d%d", &linha, &coluna);
+        printf("\nCoordenadas invalidas!\n\nJogador %c digite outra linha: ", j);
+        scanf("%d", &linha);
+        printf("\nJogador %c digite outra coluna: ", j);
+    	scanf("%d", &coluna);
     }
     matrizJogo[linha][coluna] = j;
 }
 
-/* Funcao Que Retorna Posicoes Vazias */
+/* Funcao Que Checa Posicoes Vazias para caso o jogo dê velha */
 int quantVazias() {
     int quantidade = 0;
 
@@ -174,7 +177,7 @@ void jogar() {
 }
 
 /* Menu para selecionar no Switch */
-int cabecalho() {
+int selecaoswitch() {
     int escolhido;
 
     printf("--- JOGO DA VELHA ---");
@@ -196,7 +199,7 @@ int main() {
 
     do {
         system("CLS");
-        switch (cabecalho()) {
+        switch (selecaoswitch()) {
         case 1:
             do {
                 system("CLS");
@@ -212,6 +215,7 @@ int main() {
             printf("Leon Denis Silvestre de Lucena\n");
             printf("Matheus de Moura Aguiar Quintanilha\n");
             printf("Bruna Siqueira Correia\n");
+            printf("Murilo Vicente Araujo Batista Ribeiro\n");
             break;
         case 3:
             system("CLS");
