@@ -143,7 +143,7 @@ void jogar() {
         if (jogador == 1) {
             lerCoordenadas(jogador1);
             jogador++;
-            vitoriaDeX += ganhouPorLinhas(jogador1);
+            vitoriaDeX += ganhouPorLinhas(jogador1); 
             vitoriaDeX += ganhouPorColunas(jogador1);
             vitoriaDeX += ganhouPorDiagPrin(jogador1);
             vitoriaDeX += ganhouPorDiagSec(jogador1);
