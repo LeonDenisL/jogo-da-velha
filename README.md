@@ -14,3 +14,5 @@
 <strong> main.exe :</strong> Executavel do Jogo da Velha. <br>
 <strong> Video Apresentação.mp4 :</strong> Vídeo de apresentação mostrando o Jogo Rodando. <br>
 <strong> RELATORIO JOGO DA VELHA.PDF :</strong> Relatorio referente ao desenvolvimento conforme solicitado. <br>
+<strong> Readme.md :</strong> Este arquivo informativo para o github <br>
+<strong> .gitignore :</strong> Arquivo para ignorar arquivos que não pretendiamos subir para o git durante o versionamento  <br>
